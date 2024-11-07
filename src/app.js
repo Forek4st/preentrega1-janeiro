@@ -75,10 +75,10 @@ const jugar = () => {
   }
 };
 
-const $recargar = document.querySelector(".recargar-btn");
+document.addEventListener("DOMContentLoaded", () => {
+  const $recargar = document.querySelector(".recargar-btn");
 
-$recargar.addEventListener("click", () => {
-  jugar();
+  $recargar.addEventListener("click", () => {
+    jugar();
+  });
 });
-
-jugar();
